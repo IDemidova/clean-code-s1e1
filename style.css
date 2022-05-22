@@ -11,11 +11,16 @@
   margin: 0 auto;
 }
 
-.matrix-img {
-  width: 100%;
+.matrix {
+  margin-bottom: 16px;
 }
 
-.more-info {
+.matrix__img {
+  width: 100%;
+  display: block;
+}
+
+.matrix__info {
   font-family: fantasy, cursive;
 }
 
@@ -42,7 +47,7 @@
 
 .wrapper {
   display: flex;
-  margin-top: 20px;
+  padding: 20px 0 16px;
 }
 
 .tasks {
@@ -93,6 +98,7 @@
   vertical-align: middle;
   display: none;
   flex-grow: 1;
+  box-sizing: border-box;
 }
 
 .task__input:focus {
@@ -120,6 +126,10 @@
 .task__checkbox {
   margin: 0 10px;
   vertical-align: middle;
+}
+
+.task__button_remove {
+  height: 32px;
 }
 
 .remove-img {
